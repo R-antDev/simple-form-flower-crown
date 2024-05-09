@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower | Crown</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=noto-sans:400" rel="stylesheet" />
+    <style>
+        main{
+            font-family: 'Noto Sans', sans-serif;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <main class="grid grid-cols-3" >
+        <section class="relative">
+            <img class="h-screen" src="/img/image.png" alt="Flower">
+            <div class="absolute inset-0 mt-28">
+                <div class="bg-white/50 p-6 flex items-center justify-center space-x-3 text-2xl font-bold">
+                    <img src="/img/flower-line.png" alt="flower-line">
+                    <p>FLOWER | CROWN</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="col-span-2 flex flex-col justify-center px-20">
+            <form action="" class="space-y-6">
+                <fieldset class="space-y-8 border-b py-10 border-gray-200">
+                    <h1 class="text-3xl font-bold">REGISTER!</h1>
+                    <div class="flex space-x-20">
+                        <div class="flex flex-col">
+                            <label for="first_name">FIRST NAME</label>
+                            <input class="border border-gray-400 rounded-md px-3 py-1 " title="first_name"
+                                id="first_name" type="text">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="last_name">LAST NAME</label>
+                            <input class="border border-gray-400 rounded-md px-3 py-1 " title="last_name" id="last_name"
+                                type="text">
+                        </div>
+                    </div>
+                    <div class="flex space-x-20">
+                        <div class="flex flex-col">
+                            <label for="email">EMAIL</label>
+                            <input class="border border-gray-400 rounded-md px-3 py-1 " id="email"
+                                placeholder="someone@mail.com" type="email">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input class="border border-gray-400 rounded-md px-3 py-1 " id="phone" type="tel">
+                        </div>
+                    </div>
+                    <div class="flex space-x-20">
+                        <div class="flex flex-col">
+                            <label for="password">PASSWORD</label>
+                            <input class="border border-gray-400 rounded-md px-3 py-1 " title="password" id="password"
+                                type="password">
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="c_password">CONFIRM PASSWORD</label>
+                            <input class="border border-gray-400 rounded-md px-3 py-1 " title="confirm_password"
+                                id="c_password" type="password">
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md" type="submit">Create
+                    Account</button>
+            </form>
+            <p class="pt-5">Already have an account? <a class="text-blue-700 hover:text-blue-900 underline" href="login.html">Log In</a></p>
+        </section>
+
+    </main>
+</body>
+
+</html>
